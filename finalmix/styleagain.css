@@ -1,0 +1,171 @@
+body, html{
+    margin: 0px;
+    
+    background-color: #e9f8f3;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=M+PLUS+Code+Latin:wght@300&display=swap');
+
+/*layout for the top part*/
+.banner{
+grid-area: banner;
+background-color: black;
+color: #e7feff;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: smaller;
+font-stretch: expanded;
+}
+
+.logo{
+grid-area: logo;
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 3;
+}
+
+.logo img{
+    width: 160px;
+    height: 150px;
+    animation-name: intro;
+    animation-duration: 4s;
+    animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transform: translateY(20px);
+}
+
+.menu{
+grid-area: menu;
+font-family: 'Cutive Mono', monospace;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.menu li{
+    list-style-type: none;
+    margin: 30px;
+    font-size: xx-large;
+    padding:2px 5px 2px 5px;
+    border: solid 3px #82d8ba;
+    border-radius: 10px;
+}
+
+.menu li a{
+    color: #052114;
+    text-decoration: none;
+}
+
+.menu li a:hover{
+    color: white;
+}
+
+
+.menu li:hover{
+   background-color: #82d8ba;
+}
+
+
+.upper{
+    display: grid;
+    grid-template-areas:"banner banner banner"
+                        "logo menu menu"
+                        "logo menu menu";
+    grid-template-rows: 30px 120px;    
+    grid-template-columns: 20% 80%;
+}
+
+
+/*layout for bottom part*/
+.slideshow-container {
+    grid-area: slideshow;
+    max-width: 700px;
+    position: relative;
+    margin-left: 30px;
+    margin-top: 0px;
+    transform: translateY(80px);
+  }
+  
+  
+  .mySlides {
+    display: none;
+    border: outset solid #5683f5;
+    
+  }
+
+  .mySlides img{
+      border-radius: 20px;
+      border: solid slateblue 5px;
+      transform: translateX(160px);
+  }
+
+.notif{
+    grid-area: notif;
+    padding: 20px;
+    font-family: 'M PLUS Code Latin', sans-serif;
+    color: #052114;
+
+
+}
+
+.notif-box{
+    background-color: #82d8ba;
+    padding: 3px;
+    overflow-y: scroll;
+    border-radius: 30px;
+    height: 500px;
+}
+
+.notif-box li{
+    list-style-type: square;
+}
+
+
+.faqs{
+    grid-area: faqs;
+    padding: 50px;
+    transform: translateY(-50px);
+}
+
+.faqs h1{
+    justify-self: center;
+    position: absolute;
+}
+
+
+.faqbox{
+    background-color: #82d8ba;
+    border-radius: 10px;
+    padding: 7px;
+    line-height: 1.4;
+    font-family: 'M PLUS Code Latin', sans-serif;;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: 55vh 20vh;
+    grid-template-areas:"slideshow notif"
+                        "faqs faqs";
+    
+}
+
+@keyframes intro {
+    from{
+        height: 800px;
+        width: 1000px;
+        transform: translate(600px, 00px);
+    }
+
+    to{
+        height: 160px;
+        width: 160px;
+    }
+}
+
+

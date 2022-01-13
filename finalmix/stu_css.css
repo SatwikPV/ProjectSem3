@@ -1,0 +1,562 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=M+PLUS+Code+Latin:wght@300&display=swap');
+
+.layout{
+    height: 1338px;
+    display: grid;
+    background-color: #eeeeee;
+    grid-template-rows: 2% 10% 10% 76.5% 1.5%;    
+    margin: auto;   
+ }   
+ 
+ ::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color:#001f3f;
+    border-radius: 70px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color:#10467b;
+}
+
+ .banner{
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: -11px -10px -10px -10px;
+    margin-bottom: 10px;
+    font-size: smaller;
+    padding: 5px;
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    z-index: 1;
+}
+
+ .topbar
+ {
+    display: grid;
+    grid-template-columns: 20% 80%;
+ }
+
+ .image{
+     position: absolute;
+     width: 150px;
+     height: 150px;
+     display: flex;
+     justify-content: center;
+     animation-name: logoShow;
+     animation-duration: 4s;
+     z-index: 4;
+     animation-timing-function:cubic-bezier(0.99, 0.475, 0.065, 1);
+     transform: translateX(100px);
+ }
+
+ .title{
+    height: 150px;
+    width: 900px;
+    font-size: 40pt;
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content:center;
+    font-weight: 800;
+    align-items: center;
+    transform: translateX(90px);
+    background: url(title_mask.jpg);
+    color: #6497b1;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+ }
+
+
+.togglebar ul{
+     display: flex;
+     padding: 5px;
+     flex: auto;
+     flex-direction: row-reverse;
+     list-style-type: none;
+     transform: translateY(-50px);
+     font-family: 'Cutive Mono', monospace;
+     font-weight: 800;
+     font-size: 20pt;
+    }
+
+.togglebar li a{
+margin: 5px;
+border: solid #6497b1;
+padding: 5px 20px 5px 20px;
+border-radius: 10px;
+color:white;
+background-color:#6688CC;
+text-decoration: none;
+ }
+
+
+.togglebar li a:hover{
+    background-color: #005b96;
+    border-radius: #005b96;
+}
+
+.cardMenu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 80px;
+    margin: 10px 100px 50px 100px;
+    position: relative;
+    transform: translateY(-80px);
+    }
+
+.card1{
+    background-color: #005b96; 
+    padding: 50px;
+    border-radius: 40px;  
+    font-size: 50pt;
+    text-align: center;
+    position: relative;
+    color: white;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 25px #011f4b;
+}
+
+.card1:hover{
+    background-color: #6497b1; 
+    border-radius: 40px;  
+    text-align: center;
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 25px #011f4b;
+}
+
+.card1 button{
+   visibility: hidden;
+   margin: 30px;
+}
+
+
+.card1:hover button{
+    visibility:visible
+ }
+
+.card1 button a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+ .card2{
+    background-color: #10467b; 
+    padding: 50px;
+    border-radius: 40px;  
+    font-size: 50pt;
+    text-align: center;
+    position: relative;
+    color: white;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 25px #011f4b;
+}
+
+.card2:hover{
+    background-color: #6497b1; 
+    border-radius: 40px;  
+    text-align: center;
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 25px #011f4b;
+}
+
+.card2 button{
+   visibility: hidden;
+   margin: 30px;
+}
+
+.card2:hover button{
+    visibility:visible
+ }
+
+ .card2 button a{
+    color: whitesmoke;
+    text-decoration: none;
+ }
+.card3{
+    background-color: #005b96; 
+    padding: 50px;
+    border-radius: 40px;  
+    font-size: 50pt;
+    text-align: center;
+    position: relative;
+    color: white;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 25px #011f4b;
+}
+
+.card3:hover{
+    background-color: #6497b1; 
+    border-radius: 40px;  
+    text-align: center;
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 25px #011f4b;
+}
+
+.card3 button{
+   visibility: hidden;
+   margin: 30px;
+}
+
+.card3:hover button{
+    visibility:visible
+ }
+.card3 button a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+ .card4{
+    background-color: #10467b; 
+    padding: 50px;
+    border-radius: 40px;  
+    font-size: 50pt;
+    text-align: center;
+    position: relative;
+    color: white;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 25px #011f4b;
+}
+
+.card4:hover{
+    background-color: #6497b1; 
+    border-radius: 40px;  
+    text-align: center;
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 25px #011f4b;
+}
+
+.card4 button{
+   visibility: hidden;
+   margin: 30px;
+}
+
+.card4:hover button{
+    visibility:visible
+ }
+
+.card4 button a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+ 
+.card5{
+    background-color: #005b96; 
+    padding: 50px;
+    border-radius: 40px;  
+    font-size: 50pt;
+    text-align: center;
+    position: relative;
+    color: white;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 25px #011f4b;
+}
+
+.card5:hover{
+    background-color: #6497b1; 
+    border-radius: 40px;  
+    text-align: center;
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 25px #011f4b;
+}
+
+.card5 button{
+   visibility: hidden;
+   margin: 30px;
+}
+
+.card5:hover button{
+    visibility:visible
+ }
+
+.card5 button a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+ 
+.card6{
+    background-color: #104671; 
+    padding: 50px;
+    border-radius: 40px;  
+    font-size: 50pt;
+    text-align: center;
+    position: relative;
+    color: white;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 25px #011f4b;
+}
+
+.card6:hover{
+    background-color: #6497b1; 
+    border-radius: 40px;  
+    text-align: center;
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 25px #011f4b;
+}
+
+.card6 button{
+   visibility: hidden;
+   margin: 30px;
+}
+
+.card6:hover button{
+    visibility:visible
+ }
+
+.card6 button a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+ 
+.card7{
+    background-color: #005b96; 
+    padding: 50px;
+    border-radius: 40px;  
+    font-size: 50pt;
+    text-align: center;
+    position: relative;
+    color: white;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 25px #011f4b;
+}
+
+.card7:hover{
+    background-color: #6497b1; 
+    border-radius: 40px;  
+    text-align: center;
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 25px #011f4b;
+}
+
+.card7 button{
+   visibility: hidden;
+   margin: 30px;
+}
+
+.card7:hover button{
+    visibility:visible
+ }
+
+
+ .card7 button a{
+    color: whitesmoke;
+    text-decoration: none;
+ }
+.card8{
+    background-color: #104671; 
+    padding: 50px;
+    border-radius: 40px;  
+    font-size: 50pt;
+    text-align: center;
+    position: relative;
+    color: white;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 25px #011f4b;
+}
+
+.card8:hover{
+    background-color: #6497b1; 
+    border-radius: 40px;  
+    text-align: center;
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 25px #011f4b;
+}
+
+.card8 button{
+   visibility: hidden;
+   margin: 30px;
+}
+
+.card8:hover button{
+    visibility:visible
+ }
+
+
+ .card8 button a{
+    color: whitesmoke;
+    text-decoration: none;
+ }
+.card9{
+    background-color: #005b96; 
+    padding: 50px;
+    border-radius: 40px;  
+    font-size: 50pt;
+    text-align: center;
+    position: relative;
+    color: white;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 25px #011f4b;
+}
+
+.card9:hover{
+    background-color: #6497b1; 
+    border-radius: 40px;  
+    text-align: center;
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 25px #011f4b;
+}
+
+.card9 button{
+   visibility: hidden;
+   margin: 30px;
+}
+
+.card9:hover button{
+    visibility:visible
+ }
+
+.card9 button a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+ 
+.card1{
+    background-color: #005b96; 
+    padding: 50px;
+    border-radius: 40px;  
+    font-size: 50pt;
+    text-align: center;
+    position: relative;
+    color: white;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 25px #011f4b;
+}
+
+.card1:hover{
+    background-color: #6497b1; 
+    border-radius: 40px;  
+    text-align: center;
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 25px #011f4b;
+}
+
+.card1 button{
+   visibility: hidden;
+   margin: 30px;
+}
+
+.card1:hover button{
+    visibility:visible
+ }
+
+
+.cardMenu button{
+    display: flex; 
+    font-size: 32px;
+    padding: 10px 25px 10px 35px;
+    align-items: center; 
+    justify-content: center;
+    color: #FFF; background-color: #6688CC;
+    border-radius: 20%;
+}
+ 
+
+.footer a{
+    color: black;
+    text-decoration: none;
+    font-size: x-large;
+}
+
+
+@keyframes logoShow {
+    from{
+        height: 500px;
+        width: 800px;
+        transform: translateX(50%);
+
+    }
+
+    to{
+        width: 150px;
+    }
+}
+
+
+
+
+
+    
+
+
